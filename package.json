@@ -2,14 +2,14 @@
   "name": "parser",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://www.alotropico.com/projects/pattern-extractor",
+  "homepage": "http://www.alotropico.com/projects/pattern-extractor",
   "dependencies": {
     "react": "^16.3.2",
     "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.17",
+    "react-scripts": "^3.2.0",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
     "redux-promise": "^0.5.3"
@@ -19,5 +19,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
