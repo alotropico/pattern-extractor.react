@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/projects/pattern-extractor/static/css/main.53f3a60e.chunk.css",
+    "main.js": "/projects/pattern-extractor/static/js/main.97685939.chunk.js",
+    "main.js.map": "/projects/pattern-extractor/static/js/main.97685939.chunk.js.map",
+    "runtime-main.js": "/projects/pattern-extractor/static/js/runtime-main.6c3db43f.js",
+    "runtime-main.js.map": "/projects/pattern-extractor/static/js/runtime-main.6c3db43f.js.map",
+    "static/js/2.ec514d93.chunk.js": "/projects/pattern-extractor/static/js/2.ec514d93.chunk.js",
+    "static/js/2.ec514d93.chunk.js.map": "/projects/pattern-extractor/static/js/2.ec514d93.chunk.js.map",
+    "index.html": "/projects/pattern-extractor/index.html",
+    "precache-manifest.ddfbcb75478f6f4653c39a6f574a5d47.js": "/projects/pattern-extractor/precache-manifest.ddfbcb75478f6f4653c39a6f574a5d47.js",
+    "service-worker.js": "/projects/pattern-extractor/service-worker.js",
+    "static/css/main.53f3a60e.chunk.css.map": "/projects/pattern-extractor/static/css/main.53f3a60e.chunk.css.map",
+    "static/media/hero.png": "/projects/pattern-extractor/static/media/hero.4ba0aac1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6c3db43f.js",
+    "static/js/2.ec514d93.chunk.js",
+    "static/css/main.53f3a60e.chunk.css",
+    "static/js/main.97685939.chunk.js"
+  ]
+}
