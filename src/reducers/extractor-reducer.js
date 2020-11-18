@@ -3,12 +3,13 @@ import { parse } from '../extractors/extractor';
 const initialState = {
 
 	inputOptions: [
-		['Emails','email','([a-zA-Z0-9._-]+@[a-zA-Z0-9]+\\.[a-zA-Z0-9._-]{2,4}(\\.[a-zA-Z0-9._-]+)?)'],
+		['Emails','email','[a-zA-Z0-9._-]+@([a-zA-Z0-9_-]+\\.)+[a-zA-Z0-9_-]+'],
 		['Phone numbers','phone','[0-9-\\(\\)\\+][0-9-\\(\\)\\+ ]{7,17}'],
 		['Numbers','numbers','[0-9]+'],
-		['Web addresses','url','(https?:\\/\\/|www.)(www.)?[a-zA-Z0-9]+\\.([a-zA-Z0-9]{2,3})(\\.[a-zA-Z0-9]{2,3})?([a-zA-Z0-9.-_/?=]+)?'],
+		['Web addresses (URLs)','url','(https?:\\/\\/|www.)(www.)?[a-zA-Z0-9]+\\.([a-zA-Z0-9]{2,3})(\\.[a-zA-Z0-9]{2,3})?([a-zA-Z0-9.-_/?=]+)?'],
 		['Words','words','[a-zA-Z]{2,60}'],
 		['Wikidata IDs','wikidata','(Q|P)\\d+'],
+		['Characters','chars','.'],
 		['Regular expression','custom','']
 	],
 
@@ -20,20 +21,19 @@ const initialState = {
 		['Tab','	']
 	],
 
-	rawText: 'EXAMPLE TEXT\n\n' +
+	rawText: '*** 𝐄𝐗𝐀𝐌𝐏𝐋𝐄 𝐓𝐄𝐗𝐓 ***\n\n' +
 
-	'foo@.com, user@mail.com, jane@hotmail.com, john@domain, @user, user@mail.net, user@mail.net\n' +
-	'098999555, (+582) 576821, 320-42-22, +5 999 999 555, +5 999 999 555\n' +
-	'htt://www.domain.com/something, http://ok.com.ru, https://www.secure.edu, www.test.com/path/morepath?s=string\n' +
-	'Q1, q184226, Q77, P106, P31, P31, T423, p45\n' +
-	'234423, 7567, 234123\n' +
+	'𝗘𝗠𝗔𝗜𝗟𝗦 invalid@.com, anna@mail.com, jane@mail.com.co, john@invalid, @invalid, john@mail.net, anna@mail.net\n' +
+	'𝗣𝗛𝗢𝗡𝗘 𝗡𝗨𝗠𝗕𝗘𝗥𝗦 098999555, (+582) 576821, 320-42-22, +5 999 999 555, +5 999 999 555\n' +
+	'𝗨𝗥𝗟𝗦 htt://www.domain.com/something, http://ok.com.ru, https://www.secure.edu, www.test.com/path/morepath?s=string\n' +
+	'𝗪𝗜𝗞𝗜𝗗𝗔𝗧𝗔 𝗜𝗗𝗦 Q1, q184226, Q77, P106, P31, P31, T423, p45\n' +
+	'𝗡𝗨𝗠𝗕𝗘𝗥𝗦 234423, 7567, 234123\n\n' +
 
-	'«Quem recitas meus est, o Fidentine, libellus:\n' +
-    'sed male cum recitas, incipit esse tuus.»\n\n' +
+	'«Quem recitas meus est, o Fidentine, libellus: sed male cum recitas, incipit esse tuus.»\n\n' +
 
 	'¯\\_(ツ)_/¯\n',
 
-	sort: true,
+	sort: false,
 	unique: true,
 	uppercase: false,
 
