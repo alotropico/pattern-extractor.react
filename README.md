@@ -6,22 +6,21 @@ Web app for the extraction of patterns from text, made with React/Redux
 
 Demo: http://www.alotropico.com/projects/pattern-extractor/
 
-## Links
-- [My homepage](http://www.alotropico.com/)
-- [Twitter](https://twitter.com/alotropico)
-
-
-##### Installation
+### Installation
 ```batch
 npm install
 ```
 
-##### Run project in local server
+### Run project in local server
 ```batch
 npm run start
 ```
 
-##### Build static deliverable
+### Build static deliverable
 ```batch
 npm run build
 ```
+
+### Links
+- [My homepage](http://www.alotropico.com/)
+- [Twitter](https://twitter.com/alotropico)
