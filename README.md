@@ -9,3 +9,18 @@ Demo: http://www.alotropico.com/projects/pattern-extractor/
 ## Links
 - [My homepage](http://www.alotropico.com/)
 - [Twitter](https://twitter.com/alotropico)
+
+Installation
+```batch
+npm install
+```
+
+Run project in local server
+```batch
+npm run start
+```
+
+Build static deliverable
+```batch
+npm run build
+```
