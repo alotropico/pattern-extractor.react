@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8567b29b3caa1151003ebd53b733f32a",
+    "revision": "445b1585168317f8262d2f113b1caa38",
     "url": "/projects/pattern-extractor/index.html"
   },
   {
-    "revision": "f522702284aeb54190a8",
+    "revision": "1210e7c484834252d0fb",
     "url": "/projects/pattern-extractor/static/css/main.53f3a60e.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/projects/pattern-extractor/static/js/2.ec514d93.chunk.js"
   },
   {
-    "revision": "f522702284aeb54190a8",
-    "url": "/projects/pattern-extractor/static/js/main.97685939.chunk.js"
+    "revision": "1210e7c484834252d0fb",
+    "url": "/projects/pattern-extractor/static/js/main.11931d07.chunk.js"
   },
   {
     "revision": "2b483624be97c71d245f",
